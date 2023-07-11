@@ -132,7 +132,7 @@ async function getRefreshToken() {
 
   let refreshToken = process.env.refreshToken || []
   try {
-    if (instance) refreshToken = await getEnv(instance, 'refreshToken')
+    if (instance) refreshToken = await getEnv(instance, 'ALIYUN_DRIVER_REFRESHTOKEN')
   } catch (e) {}
 
   let refreshTokenArray = []
